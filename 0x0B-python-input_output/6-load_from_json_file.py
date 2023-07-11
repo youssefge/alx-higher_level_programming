@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-"""load from json"""
+"""
+Contains the "load_from_json_file" function
+"""
+
 import json
 
 
 def load_from_json_file(filename):
-    """load from json to file"""
-    with open(filename, encoding="utf-8") as file_loaded:
-        return json.load(file+loaded)
+    """creates an Object from a "JSON file" """
+    with open(filename, 'r', encoding='utf-8') as file:
+        create_obj = json.load(file)
+        return create_obj
